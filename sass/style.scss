@@ -1,47 +1,152 @@
 /*
-* Theme Name: HackerYou Starter Theme
+* Theme Name: Andrew's Portfolio
 * Theme URI: http://hackeryou.com;
-* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Description: Portfolio of Front End Developer Andrew Dyke
 * Version: 1.0
-* Author: HackerYou
-* Author URI: http://hackeryou.com
+* Author: Andrew Dyke
+* Author URI: http://andrewdyke.me
 */
 
 @import 'normalize';
+@import url(https://fonts.googleapis.com/css?family=Oswald|Catamaran:400,100,500);
+@import 'animate';
+@import 'hover';
 @import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
+// Colors
+$grey: #f7f7f7;
+$grey2: #dbdce0;
+$darkgrey: #54565b;
+$blue1: #2189f8;
+$blue2: #3d9ff8;
+$blue3: #6bc5fa;
+
+
 /*
 ====================================
 Default Styling
 ====================================
 */
 
+html {
+	// font-size: 62.5%;
+}
+
 img {
 	max-width: 100%;
 }
 
 body {
-	color: #333;
+	color: $darkgrey;
+	font-family: 'Catamaran';
+	-webkit-font-smoothing: antialiased;
+}
+
+// HEADER STYLES
+header {
+	// background: white;
+	background: url(../startertheme/images/headBG.jpg);
+	background-size: cover;
+	width:100%;
+	height:100vh;
+	transform: skewY(-2deg);
+}
+
+header .container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	transform: skewY(2deg);
+}
+
+.headerText {
+	width: 100%;
+	color: $blue1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.headerBlurb {
+	margin: 110px 0;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	h4 {
+		margin: 20px 0 0;
+	}
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+// /header styles
+
+// About Me Styles
+#about {
+	background: $grey;
+	padding: 40px 0;
+	margin: 0 0 40px;
+	transform: skewY(-2deg);
+	img, p {
+		transform: skewY(2deg);
+	}
+	h2 {
+		text-align: right;
+		width: 100%;
+		font-size: 30px;
+	}
+}
+
+.aboutWrap {
+	max-width: 700px;
 	margin: 0 auto;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+// Portfolio
+#portfolio {
+	padding: 40px 0;
+	background: $blue1;
+	transform: skewY(-2deg);
+	h2 {
+		color: white;
+	}
 }
 
-.full {
-	width: 100%;
+.pieces {
+	display: flex;
+	transform: skewY(2deg);
 }
 
+.portPiece {
+	background: white;
+	// border: 1px solid lightgray;
+	max-width: calc(50% - 40px);
+	border-radius: 10px;
+	margin: 20px 0;
+	padding: 20px;
+	box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.18);
+}
+
+
+// Skills
+#skills {
+	padding: 40px 0;
+	margin: 40px 0;
+	background: $grey;
+	transform: skewY(-2deg);
+	.skillBox {
+		display: flex;
+		.skill {
+			width: 20%;
+		}
+	}
+}
 
 
 

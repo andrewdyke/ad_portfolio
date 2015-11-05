@@ -266,3 +266,20 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+add_filter('nav_menu_link_attributes' , 'addClassToLink' , 10 , 1);
+function addClassToLink($attrs){
+    $attrs['class'] = 'hvr-underline-from-left';
+    return $attrs;
+}
+
+// Hiding and Showing Admin bar
+show_admin_bar( false );
+
+
+
+
+
+
+
+

@@ -1,8 +1,78 @@
+// Colors
+$grey: #f7f7f7;
+$grey2: #939393;
+$darkgrey: #54565b;
+$blue1: #2189f8;
+$blue2: #3d9ff8;
+$blue3: #6bc5fa;
+
+
+/* Headings */
+h1,h2,h3,h4,h5 {
+	margin: 0;
+}
+
+h1.siteTitle a {
+	padding: 0 20px;
+	font-family: 'Oswald', sans-serif;
+	color: $blue1;
+	width: 25%;
+	text-transform: uppercase;
+	font-weight: 100;
+	span.lightGrey {
+		color: $blue3;
+	}
+	span.small {
+		font-size: 26px;
+	}
+}
+
+h2 {
+	font-family: 'Catamaran', sans-serif;
+	color: $darkgrey;
+	text-transform: lowercase;
+	font-weight: 100;
+	font-size: 14px;
+	width: 25%;
+}
+
+h2.sectionTitle {
+	text-align: center;
+	width: 100%;
+	font-size: 40px;
+	margin: 20px 0;
+	transform: skewY(2deg);
+}
+
+h3 {
+	color: $grey2;
+	font-size: 44px;
+	font-weight: 100;
+	line-height: 1.2;
+	span {
+		font-weight: 500;
+		color: $blue1;
+	}
+}
+
+h3.blue {
+		color: $blue1;
+	}
+
+h4 {
+	color: $grey2;
+	font-weight: 400;
+	span {
+		color: $blue2;
+	}
+}
+
+/* Links */
 a {
-	color: #BA209B;
+	color: white;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: white;
 	}
 }
 
