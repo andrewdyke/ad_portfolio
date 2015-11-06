@@ -33,7 +33,7 @@ Default Styling
 */
 
 html {
-	// font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 img {
@@ -41,6 +41,7 @@ img {
 }
 
 body {
+	font-size: 1.8rem;
 	color: $darkgrey;
 	font-family: 'Catamaran';
 	-webkit-font-smoothing: antialiased;
@@ -58,6 +59,7 @@ header {
 
 header .container {
 	width: 100%;
+	height: 55vh;
 	display: flex;
 	align-items: center;
 	transform: skewY(2deg);
@@ -99,12 +101,12 @@ header .container {
 	h2 {
 		text-align: right;
 		width: 100%;
-		font-size: 30px;
+		font-size: 3rem;
 	}
 }
 
 .aboutWrap {
-	max-width: 700px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 

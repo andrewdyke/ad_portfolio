@@ -44,7 +44,7 @@
         <?php while($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
         <!-- Portfolio Piece -->
           <div class="portPiece hvr-float">
-            <h3><?php the_title(); ?></h3>
+            <h3 class="pieceTitle"><?php the_title(); ?></h3>
             <?php the_post_thumbnail('medium'); ?>
             <p><?php the_field('short_description'); ?></p>
           </div> 
@@ -78,7 +78,7 @@
       <!-- Skill Box -->
         <div class="skill">
           <h3><?php the_title(); ?></h3>
-          <?php the_post_thumbnail(); ?>
+          <?php the_post_thumbnail('medium'); ?>
         </div> 
       <!-- /.skill Box -->
       <?php endwhile;//end skills loop ?>
@@ -90,6 +90,9 @@
 <!-- ================= /Skills Section =================== -->
 
 
+<!-- ================= Contact Me =================== -->
+<?php  dynamic_sidebar( 'primary-widget-area' ); ?>
+<!-- ================= /Contact Me =================== -->
 
     </div> <!-- /.content -->
 </div> <!-- /.main -->

@@ -12,6 +12,11 @@ h1,h2,h3,h4,h5 {
 	margin: 0;
 }
 
+p {
+	font-weight: 100;
+	font-size: 1.7rem;
+}
+
 h1.siteTitle a {
 	padding: 0 20px;
 	font-family: 'Oswald', sans-serif;
@@ -23,7 +28,7 @@ h1.siteTitle a {
 		color: $blue3;
 	}
 	span.small {
-		font-size: 26px;
+		font-size: 2.6rem;
 	}
 }
 
@@ -32,23 +37,30 @@ h2 {
 	color: $darkgrey;
 	text-transform: lowercase;
 	font-weight: 100;
-	font-size: 14px;
+	font-size: 1.4rem;
 	width: 25%;
 }
 
 h2.sectionTitle {
 	text-align: center;
 	width: 100%;
-	font-size: 40px;
+	font-size: 4rem;
 	margin: 20px 0;
 	transform: skewY(2deg);
+	&:after {
+		content: '';
+		position: absolute;
+		border-bottom: 2px solid white;
+		width:70px;
+	}
 }
 
 h3 {
 	color: $grey2;
-	font-size: 44px;
+	font-size: 4.4rem;
 	font-weight: 100;
 	line-height: 1.2;
+	margin: 0 0 14px;
 	span {
 		font-weight: 500;
 		color: $blue1;
@@ -56,8 +68,20 @@ h3 {
 }
 
 h3.blue {
-		color: $blue1;
+	color: $blue1;
+	&:after {
+	  content: '\A';  
+	  width: 60px;
+	  height: 2px;
+	  border-radius: 5px;
+	  border-bottom: 3px solid $blue1;
+	  position: absolute;
 	}
+}
+
+h3.pieceTitle {
+	font-size: 3rem;
+}
 
 h4 {
 	color: $grey2;

@@ -49,7 +49,7 @@
     <section class="headerText">
       <div class="headerBlurb">
         <h3>My name is <span>Andrew</span></h3>
-        <h3 class="blue">I am a <span>Front-End Developer</span></h3>
+        <h3>I am a <span>Front-End Developer</span></h3>
         <h4>I build <span>custom responsive websites</span><br>
         and would love to build something <span>for you.</span></h4>
       </div>
