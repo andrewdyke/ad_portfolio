@@ -86,13 +86,13 @@ header .container {
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 70px 0 90px;
 }
 
 // About Me Styles =====================
 #about {
 	background: $grey;
-	padding: 70px 0;
+	padding: 40px 0 80px;
 	margin: 0 0 40px;
 	transform: skewY(-2deg);
 	img, p {
@@ -112,7 +112,7 @@ header .container {
 
 // Portfolio ========================
 #portfolio {
-	padding: 65px 0 95px;
+	padding: 0 0 95px;
 	background: $blue;
 	transform: skewY(-2deg);
 	h2 {
@@ -186,7 +186,7 @@ header .container {
 	color: $blue;
 }
 
-skills,about span:after {
+#skills,#about span:after {
 	color: $blue;
 }
 
