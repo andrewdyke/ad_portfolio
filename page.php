@@ -17,7 +17,7 @@
       <!-- ========================= About Me ========================= -->
         <section id="about">
           <div class="aboutWrap">
-            <h2>About Me</h2>
+            <h2 class="sectionTitle blue"><span>About Me</span></h2>
            <!--  <img src="" alt="A photo of Andrew Dyke"> -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eos consequatur et recusandae officiis quae. Molestias, adipisci doloribus ratione asperiores voluptates. Quae amet ipsa enim architecto dolorem, ducimus itaque soluta.</p>
           </div>
@@ -29,7 +29,7 @@
       <!-- ====================== Portfolio ======================== -->
       <section id="portfolio">
         <div class="container">
-          <h2 class="sectionTitle">Featured Work</h2>
+          <h2 class="sectionTitle"><span>Featured Work</span></h2>
 
           <!-- Pieces Section -->
           <div class="pieces">
@@ -65,28 +65,17 @@
       <!-- ========================== Skills ============================ -->
       <section id="skills">
         <div class="container">
-          <h2 class="sectionTitle">Skills</h2>
+          <h2 class="sectionTitle blue"><span>Skills</span></h2>
           <div class="skillBox">
-          <?php //Creating a custom query to retrieve and display portfolio items 
-          $skillsQuery = new WP_Query(
-            array(
-              'post_type'=>'skills'
-              )
-          ); 
-          ?>
-          <?php //If there are skills posts.. ?>
-          <?php if ($skillsQuery->have_posts()): ?>
             <?php //Loop through skills posts and put dynamic content in html tags ?>
-            <?php while($skillsQuery->have_posts()): $skillsQuery->the_post(); ?>
+            <?php while(has_sub_field('skills') ): ?>
             <!-- Skill Box -->
               <div class="skill">
-                <h3><?php the_title(); ?></h3>
-                <?php the_post_thumbnail('medium'); ?>
+                <i class="devicons devicons-<?php the_sub_field('skill_icon')?>"></i>
+                <h3><?php the_sub_field('skill_name'); ?></h3>
               </div> 
             <!-- /.skill Box -->
             <?php endwhile;//end skills loop ?>
-            <?php wp_reset_postdata(); ?>
-          <?php endif; ?>
           </div>
         </div>
       </section>
@@ -95,8 +84,10 @@
 
       <!-- ======================== Contact ========================= -->
       <section id="contact">
+        <div class="container">
+          <h2 class="sectionTitle"><span>Contact Me</span></h2>  
+        </div>
         <div class="formWrap">
-          <h2 class="sectionTitle">Contact Me</h2>  
           <?php  dynamic_sidebar( 'primary-widget-area' ); ?>
         </div>
       </section>

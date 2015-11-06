@@ -2,9 +2,7 @@
 $grey: #f7f7f7;
 $grey2: #939393;
 $darkgrey: #54565b;
-$blue1: #2189f8;
-$blue2: #3d9ff8;
-$blue3: #6bc5fa;
+$blue: #2189f8;
 
 
 /* Headings */
@@ -12,23 +10,24 @@ h1,h2,h3,h4,h5 {
 	margin: 0;
 }
 
+i.devicons {
+	font-size: 14rem;
+}
+
 p {
 	font-weight: 100;
-	font-size: 1.7rem;
+	font-size: 2rem;
 }
 
 h1.siteTitle a {
 	padding: 0 20px;
-	font-family: 'Oswald', sans-serif;
-	color: $blue1;
+	// font-family: 'Oswald', sans-serif;
+	color: $blue;
 	width: 25%;
 	text-transform: uppercase;
-	font-weight: 100;
-	span.lightGrey {
-		color: $blue3;
-	}
+	font-weight: 400;
 	span.small {
-		font-size: 2.6rem;
+		font-size: 2.9rem;
 	}
 }
 
@@ -47,11 +46,18 @@ h2.sectionTitle {
 	font-size: 4rem;
 	margin: 0 0 50px;
 	transform: skewY(2deg);
-	&:after {
-		content: '';
-		position: absolute;
-		border-bottom: 2px solid white;
-		width:70px;
+	span {
+		position: relative;
+		display: inline-block;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			margin: 0 0 0 -35px;
+			border-bottom: 2px solid white;
+			width:70px;
+		}
 	}
 }
 
@@ -63,18 +69,18 @@ h3 {
 	margin: 0 0 14px;
 	span {
 		font-weight: 500;
-		color: $blue1;
+		color: $blue;
 	}
 }
 
 h3.blue {
-	color: $blue1;
+	color: $blue;
 	&:after {
 	  content: '\A';  
 	  width: 60px;
 	  height: 2px;
 	  border-radius: 5px;
-	  border-bottom: 3px solid $blue1;
+	  border-bottom: 3px solid $blue;
 	  position: absolute;
 	}
 }
@@ -87,7 +93,7 @@ h4 {
 	color: $grey2;
 	font-weight: 400;
 	span {
-		color: $blue2;
+		color: $blue;
 	}
 }
 

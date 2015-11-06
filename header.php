@@ -11,7 +11,8 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
+  <!-- Dev Icons -->
+  <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -30,10 +31,10 @@
       <!-- Title Box -->
       <div class="titleBox">
         <h1 class="siteTitle hvr-float-shadow">
-        <a>A<span class="small">ndrew</span> 
-        <span class="lightGrey">D<span class="small">yke</span></span></a>
+        <a href="http://www.andrewdyke.me">A<span class="small">ndrew</span> 
+        D<span class="small">yke</span></a>
         </h1>
-        <h2>| &nbsp;&nbsp; Front-End Developer</h2>
+        <h2>Web Development</h2>
       </div><!-- /.titleBox -->
       <!-- Menu -->
       <?php wp_nav_menu( array(

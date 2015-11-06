@@ -1,16 +1,24 @@
+
+<!-- ===========================  FOOTER =============================== -->
 <footer>
-	<section class="footTop">
-	 <h5>ANDREW DYKE</h5>
-	</section>
-	<section>
-		<div class="footBottom">
-		  
+<!-- 	<section class="footTop">
+		<div class="container">
+		 <h5>ANDREW DYKE</h5>
+		</div>
+	</section> -->
+<!-- 
+	<section class="footMiddle">
+	  <div class="container">
+		</div>
+	</section> -->
+
+	<section class="footBottom">
+		<div class="container">
+			<p>&copy; Andrew Dyke <?php echo date('Y'); ?></p>
 		</div>
 	</section>
-	<section class="container">
-		<p>&copy; Andrew Dyke <?php echo date('Y'); ?></p>
-	</section>
 </footer>
+<!-- =========================== /footer ================================ -->
 
 <script>
 /* Google Analytics! */
