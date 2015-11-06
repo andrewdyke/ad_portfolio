@@ -8,5 +8,18 @@ $blue3: #6bc5fa;
 
 
 footer {
-	clear: both;
+	padding: 0 0 100px;
+	background: $darkgrey;
+	transform: skewY(2deg);
+}
+
+.footTop {
+	background: $blue2;
+	padding: 182px;
+	transform: skewY(0deg);
+}
+
+footer .container {
+	color: $blue1;
+	padding: 50px 0;
 }

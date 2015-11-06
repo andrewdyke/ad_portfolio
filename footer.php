@@ -1,7 +1,15 @@
 <footer>
-  <div class="container">
-    <p>&copy; Andrew Dyke <?php echo date('Y'); ?></p>
-  </div>
+	<section class="footTop">
+	 <h5>ANDREW DYKE</h5>
+	</section>
+	<section>
+		<div class="footBottom">
+		  
+		</div>
+	</section>
+	<section class="container">
+		<p>&copy; Andrew Dyke <?php echo date('Y'); ?></p>
+	</section>
 </footer>
 
 <script>

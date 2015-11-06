@@ -45,7 +45,7 @@ h2.sectionTitle {
 	text-align: center;
 	width: 100%;
 	font-size: 4rem;
-	margin: 20px 0;
+	margin: 0 0 50px;
 	transform: skewY(2deg);
 	&:after {
 		content: '';
@@ -89,6 +89,12 @@ h4 {
 	span {
 		color: $blue2;
 	}
+}
+
+h5 {
+	color: $darkgrey;
+	font-size: 6rem;
+	text-align: center;
 }
 
 /* Links */

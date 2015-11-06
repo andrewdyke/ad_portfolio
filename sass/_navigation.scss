@@ -31,11 +31,13 @@ nav {
 .titleBox {
 	display: flex;
 	align-items: center;
-	width: 66%;
+	max-width: 66%;
+	min-width: 47%;
 }
 
 ul.menu {
-	width: 34%;
+	max-width: 34%;
+	min-width: 37%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
