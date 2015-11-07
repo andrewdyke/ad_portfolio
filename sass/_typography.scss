@@ -1,12 +1,4 @@
 
-
-// Colors
-$grey: #f7f7f7;
-$grey2: #939393;
-$darkgrey: #54565b;
-$blue: #2189f8;
-
-
 /* Headings */
 h1,h2,h3,h4,h5 {
 	margin: 0;
@@ -88,7 +80,10 @@ h3.blue {
 }
 
 h3.pieceTitle {
-	font-size: 3rem;
+	font-size: 2rem;
+	font-weight: 500;
+	margin: 15px 0 0;
+	color: white;
 }
 
 h4 {

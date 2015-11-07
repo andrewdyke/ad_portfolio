@@ -8,6 +8,7 @@
 * Author URI: http://andrewdyke.me
 */
 
+@import 'colors';
 @import 'normalize';
 @import url(https://fonts.googleapis.com/css?family=Oswald|Catamaran:400,100,500);
 @import 'animate';
@@ -17,15 +18,6 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
-
-// ---------------------------
-// Colors 
-// ---------------------------
-
-$grey: #f7f7f7;
-$grey2: #dbdce0;
-$darkgrey: #54565b;
-$blue: #007CD2;
 
 // ---------------------------
 // Default Styling 
@@ -51,12 +43,12 @@ body {
 	background-size: 300px auto;
 }
 
-// Nav styles in _naviation.php
+// Nav styles in _navigation.scss
 
 // HEADER STYLES ======================
 header {
 	// background: white;
-	background: url(../startertheme/images/headshot2.jpg);
+	background: url(../startertheme/images/headBG1.jpg);
 	background-size: cover;
 	width:100%;
 	height:100vh;
@@ -82,6 +74,7 @@ header .container {
 	// margin: 110px 0;
 	text-align: right;
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 	h4 {
 		margin: 20px 0 0;
@@ -127,18 +120,24 @@ header .container {
 
 .pieces {
 	display: flex;
+	flex-wrap: wrap;
 	// transform: skewY(2deg);
 }
 
 .portPiece {
 	background: rgb(248, 248, 248);
-	width: calc(33% - 15px);
-	// border-radius: 10px;
+	width: calc(33% - 17px);
+	color: white;
 	margin: 20px 10px;
-	padding: 20px;
+	padding: 10px;
 	box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.18);
-	&:hover {
-		background: white;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	p {
+		background: rgba(0,0,0,.2);
+		padding:4px;
 	}
 }
 

@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 
 <!-- ==================== HEADER ======================= -->
-<header class="animated fadeIn">
+<header>
 
   <!-- ============== Navigation ================= -->
   <nav>
@@ -46,14 +46,15 @@
 
   <!-- ======== Header Content ========== -->
   <div class="container">
-    <section class="headerText">
+   <!--  <section class="headerText"> -->
       <div class="headerBlurb">
-        <h3>My name is <span>Andrew</span></h3>
+        <!-- <h3>My name is <span>Andrew</span></h3> -->
         <h3>I am a <span>Front-End Developer</span></h3>
+        <h3>Based in <span>Toronto</span>.</h3>
         <h4>I build <span>custom responsive websites</span><br>
         and would love to build something <span>for you.</span></h4>
       </div>
-    </section>
+   <!--  </section> -->
   </div>
   <!-- /header .container -->
 

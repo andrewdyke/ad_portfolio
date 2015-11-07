@@ -267,6 +267,7 @@ function get_post_parent($post) {
 	}
 }
 
+// Add a class to menu links
 add_filter('nav_menu_link_attributes' , 'addClassToLink' , 10 , 1);
 function addClassToLink($attrs){
     $attrs['class'] = 'hvr-underline-from-left';
