@@ -4,7 +4,6 @@
  // Andrew Dyke | Front End Developer
         // Portfolio
 
-
   // Get the header.php file and show it here
   get_header();  
 ?>
@@ -14,7 +13,7 @@
 <div class="main">
     <div class="content">
 
-      <!-- ========================= About Me ========================= -->
+      <!-- ======================= About Me ======================== -->
         <section id="about">
           <div class="aboutWrap">
             <h2 class="sectionTitle blue"><span>About Me</span></h2>
@@ -22,7 +21,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eos consequatur et recusandae officiis quae. Molestias, adipisci doloribus ratione asperiores voluptates. Quae amet ipsa enim architecto dolorem, ducimus itaque soluta.</p>
           </div>
         </section>
-      <!-- ======================== /about Me =========================== -->
+      <!-- ==================== /about Me ========================= -->
 
 
 
@@ -61,8 +60,10 @@
       <!-- ================== /Portfolio Section ==================== -->
 
 
+      <!-- ========================== -->
+      <!-- Skills -->
+      <!-- ========================== -->
 
-      <!-- ========================== Skills ============================ -->
       <section id="skills">
         <div class="container">
           <h2 class="sectionTitle blue"><span>Skills</span></h2>
@@ -79,19 +80,19 @@
           </div>
         </div>
       </section>
-      <!-- ========================= /Skills ======================== -->
+      <!-- ======================== /Skills ======================== -->
 
 
-      <!-- ======================== Contact ========================= -->
+      <!-- ======================= Contact ========================= -->
       <section id="contact">
-        <div class="container">
+        <!-- <div class="container"> -->
           <h2 class="sectionTitle"><span>Contact Me</span></h2>  
-        </div>
+       <!--  </div> -->
         <div class="formWrap">
           <?php  dynamic_sidebar( 'primary-widget-area' ); ?>
         </div>
       </section>
-      <!-- ======================== /Contact ========================= -->
+      <!-- ======================= /Contact ======================== -->
 
     </div> <!-- /.content -->
 </div> <!-- /.main -->

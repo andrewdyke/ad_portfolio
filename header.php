@@ -30,11 +30,10 @@
     <div class="navWrap">
       <!-- Title Box -->
       <div class="titleBox">
-        <h1 class="siteTitle hvr-float-shadow">
-        <a href="http://www.andrewdyke.me">A<span class="small">ndrew</span> 
-        D<span class="small">yke</span></a>
+        <h1 class="siteTitle hvr-grow">
+          <a href="http://www.andrewdyke.me">Andrew Dyke</a>
         </h1>
-        <h2>Web Development</h2>
+        <h2>Developing for mobile, tablet and desktop.</h2>
       </div><!-- /.titleBox -->
       <!-- Menu -->
       <?php wp_nav_menu( array(
