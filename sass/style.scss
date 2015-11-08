@@ -49,19 +49,20 @@ body {
 header {
 	// background: white;
 	background: url(../startertheme/images/headBG1.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
 	width:100%;
 	height:100vh;
 	// transform: skewY(-2deg);
 }
 
-header .container {
-	width: 100%;
-	height: 55vh;
-	display: flex;
-	align-items: center;
-	// transform: skewY(2deg);
-}
+// header .container {
+// 	width: 100%;
+// 	height: 55vh;
+// 	display: flex;
+// 	align-items: center;
+// 	// transform: skewY(2deg);
+// }
 
 .headerText {
 	width: 100%;
@@ -71,7 +72,8 @@ header .container {
 }
 
 .headerBlurb {
-	// margin: 110px 0;
+	padding: 0 20px 0;
+	margin: 100px 0;
 	text-align: right;
 	display: flex;
 	width: 100%;
@@ -106,6 +108,7 @@ header .container {
 .aboutWrap {
 	max-width: 900px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 // Portfolio ========================
@@ -131,13 +134,30 @@ header .container {
 	margin: 20px 10px;
 	padding: 10px;
 	box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.18);
+	position: relative;
+	&:after {
+		content: '';
+		background: rgba(0,0,0,0.2);
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 50;
+	}
+	img, p, h3  {
+		position: relative;
+	}
 	img {
 		width: 100%;
 		height: 100%;
+		z-index: 100;
 	}
 	p {
-		background: rgba(0,0,0,.2);
+		// background: rgba(0,0,0,.2);
 		padding:4px;
+		z-index: 100;
 	}
 }
 
@@ -158,6 +178,7 @@ header .container {
 			text-align: center;
 			margin: 0 10px;
 			h3 {
+				color: $darkgrey;
 				font-size: 2rem;
 			}
 		}
@@ -201,6 +222,77 @@ header .container {
 }
 
 // Footer styles in _footer.scss
+
+
+// MEDIA QUERIES
+@media (max-width: 768px) {
+	header{
+		// background-size: 100%;
+		background-position: 15% 120px;
+	}
+	.titleBox {
+		width:80%;
+		h2 {
+			width: 50px;
+		}
+	}
+	.navWrap ul {
+		display: none;
+	}
+	#about {
+		padding: 20px 10px 70px;
+	}
+	.aboutWrap {
+		padding : 0 20px;
+	}
+	.pieces {
+		padding: 0 20px;
+	}
+	.portPiece {
+		width: calc(50% - 20px);
+	}
+}
+
+//Phone
+@media (max-width: 375px) {
+	header{
+		// background-size: 100%;
+		background-position: 0 50px;
+	}
+	.titleBox {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.navWrap ul {
+		display: none;
+	}
+	.headerBlurb {
+		display: none;
+	}
+	.portPiece {
+		width: 100%;
+	}
+	#skills .skillBox .skill {
+		width: calc(50% - 20px);
+	}
+	.formWrap {
+		padding: 60px 10px;
+		margin: 0 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

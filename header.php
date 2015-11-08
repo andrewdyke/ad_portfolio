@@ -33,7 +33,7 @@
         <h1 class="siteTitle hvr-grow">
           <a href="http://www.andrewdyke.me">Andrew Dyke</a>
         </h1>
-        <h2>Developing for mobile, tablet and desktop.</h2>
+        <h2>Mobile, tablet and desktop.</h2>
       </div><!-- /.titleBox -->
       <!-- Menu -->
       <?php wp_nav_menu( array(

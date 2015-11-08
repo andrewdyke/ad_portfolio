@@ -61,10 +61,7 @@
       <!-- ================== /Portfolio Section ==================== -->
 
 
-      <!-- ========================== -->
-      <!-- Skills -->
-      <!-- ========================== -->
-
+      <!-- ========================= Skills ========================= -->
       <section id="skills">
         <div class="container">
           <h2 class="sectionTitle blue"><span>Skills</span></h2>
