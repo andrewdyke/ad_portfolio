@@ -19,8 +19,23 @@
   <?php wp_head(); ?>
 </head>
 
-
 <body <?php body_class(); ?>>
+
+<!-- Hamburger -->
+<div class="hamburger">
+  <button class="toggle">
+    <span>Toggle Open & Close</span>
+  </button>
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- /hamburger -->
 
 <!-- ==================== HEADER ======================= -->
 <header>
@@ -34,7 +49,8 @@
           <a href="http://www.andrewdyke.me">Andrew Dyke</a>
         </h1>
         <h2>Mobile, tablet and desktop.</h2>
-      </div><!-- /.titleBox -->
+      </div>
+      <!-- /.titleBox -->
       <!-- Menu -->
       <?php wp_nav_menu( array(
         'container' => false,
@@ -46,7 +62,7 @@
 
   <!-- ======== Header Content ========== -->
   <div class="container">
-   <!--  <section class="headerText"> -->
+    <section class="headerText">
       <div class="headerBlurb">
         <!-- <h3>My name is <span>Andrew</span></h3> -->
         <h3>I am a <span>Front-End Developer</span></h3>
@@ -54,7 +70,7 @@
         <h4>I build <span>custom responsive websites</span><br>
         and would love to build something <span>for you.</span></h4>
       </div>
-   <!--  </section> -->
+    </section>
   </div>
   <!-- /header .container -->
 

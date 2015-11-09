@@ -45,7 +45,7 @@
               <!-- Loop through portfolio posts and put dynamic content in html tags -->
               <?php while($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
               <!-- Portfolio Piece -->
-                <div class="portPiece hvr-float" style="background-image: url(<?php echo get_field('bgimage')['url']; ?>);">
+                <div class="portPiece hvr-grow" style="background-image: url(<?php echo get_field('bgimage')['url']; ?>);">
                   <?php the_post_thumbnail('medium'); ?>
                   <h3 class="pieceTitle"><?php the_title(); ?></h3>
 

@@ -125,9 +125,11 @@ header {
 	color: white;
 	margin: 10px;
 	padding: 10px;
-	box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.18);
 	position: relative;
 	border-radius: 5px;
+	&:hover {
+		box-shadow: 0px 0px 47px 0px rgba(0,0,0,0.3);
+	}
 	&:after {
 		content: '';
 		background: rgba(0,0,0,0.2);
@@ -154,10 +156,7 @@ header {
 	}
 }
 
-// ---------------------------
-// Skills 
-// ---------------------------
-
+// Skills ==========================
 #skills {
 	padding: 20px 0 90px;
 	// margin: 40px 0;
@@ -194,16 +193,17 @@ header {
 }
 
 .formWrap {
-	padding: 60px 90px;
-	background: rgba(255, 255, 255, 0.6);
-	border-radius: 5px;
-	border: 1px solid rgba(255, 255, 255, 0.62);
-	box-shadow: 0 0 47px 0 rgba(0,0,0,.18);
-	margin: 0 auto 70px;
+	margin: 10px auto;
 	max-width: 700px;
 	// transform: skewY(2deg);
 	h2.sectionTitle {
 		// transform: skewY(0deg);
+	}
+	li {
+		list-style-type: none;
+	}
+	p {
+		color: white;
 	}
 }
 
@@ -217,9 +217,54 @@ header {
 
 // Footer styles in _footer.scss
 
+// HAMBURGER MENU
+// .hamburger {
+// 	display: none;
+// 	position: fixed;
+//   z-index: 99999;
+//   height: 100%;
+//   width: 100%;
+// }
 
-// MEDIA QUERIES
+@import 'hamburger';
+
+input {
+  line-height: normal;
+  width: 100%;
+  border: 0;
+  background: rgba(255,255,255, 0.4);
+  border-radius: 5px;
+  padding: 0 10px;
+  color: white;
+}
+
+input[type=submit] {
+	color: #fff;
+	background: none;
+	border: 1px solid white;
+	width: 200px;
+	&:hover {
+		background: white;
+		color: $blue;
+	}
+}
+
+textarea {
+	line-height: 20px;
+	padding: 10px;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+	width: 100%;
+	background: rgba(255,255,255, 0.4);
+}
+
+// MEDIA QUERIES ===========================
+// Tablet
 @media (max-width: 768px) {
+	.hamburger {
+		display: block;
+	}
 	header{
 		// background-size: 100%;
 		background-position: 15% 120px;
@@ -250,7 +295,7 @@ header {
 	}
 }
 
-//Phone
+// Phone
 @media (max-width: 375px) {
 	header{
 		// background-size: 100%;
@@ -264,7 +309,7 @@ header {
 		margin-top: 100px;
 		h2 {
 			width: 50px;
-			padding: 20px;
+			padding: 35px 20px;
 		}
 		// margin: 10px 0;
 	}

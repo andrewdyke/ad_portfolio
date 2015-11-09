@@ -14,3 +14,26 @@ jQuery(document).ready(function(){
         e.preventDefault();
     });
 });
+
+// HAMBURGER MENU
+var openNavigation = function () {
+  $('.nav').slideDown();
+  $('.toggle').addClass('open');
+};
+
+var closeNavigation = function () {
+  $('.nav').slideUp();
+  $('.toggle').removeClass('open');
+};
+
+$( '.toggle' ).on( 'click', function( e ) {  
+  if ( $('.nav').is(':visible') ) {
+    closeNavigation();
+  } else {
+    openNavigation();    
+  }
+});
+
+$('.nav a').on('click', function(e){
+  closeNavigation();
+})
