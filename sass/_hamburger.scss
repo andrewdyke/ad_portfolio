@@ -1,14 +1,6 @@
 
 @import 'colors';
 
-.hamburger {
-  display: none;
-  position: fixed;
-  z-index: 99999;
-  height: 100%;
-  width: 100%;
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -38,10 +30,12 @@ $gap         : ( $size / 3 * ( 1 - $barGap ) );
   
 // Nav class 
 .nav {
+  position: fixed;
   width: 100%;
   height: 100%;
   display: none;
   background: $bgColor;
+  z-index: 9999;
   ul, li {
     width: 100%;
     margin: 0;
@@ -70,9 +64,10 @@ $gap         : ( $size / 3 * ( 1 - $barGap ) );
 
 // Toggle class
 .toggle {
+  position: fixed;
+  z-index: 99999;
   font-size: 0;
   font-family: a;
-  position: absolute;
   background: none;
   display: block;
   border: none;

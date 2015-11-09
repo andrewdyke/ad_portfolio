@@ -9,10 +9,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Site Title -->
   <title><?php  wp_title('|', true, 'right'); ?></title>
-
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!-- Dev Icons -->
   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -21,27 +22,25 @@
 
 <body <?php body_class(); ?>>
 
-<!-- Hamburger -->
-<div class="hamburger">
-  <button class="toggle">
-    <span>Toggle Open & Close</span>
-  </button>
-  <nav class="nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</div>
+<!-- ================= Hamburger Menu ================== -->
+<button class="toggle">
+  <span>Toggle Open & Close</span>
+</button>
+<nav class="nav">
+  <ul>
+    <li><a href="#mainNav">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 <!-- /hamburger -->
 
 <!-- ==================== HEADER ======================= -->
 <header>
 
   <!-- ============== Navigation ================= -->
-  <nav>
+  <nav id="mainNav">
     <div class="navWrap">
       <!-- Title Box -->
       <div class="titleBox">
