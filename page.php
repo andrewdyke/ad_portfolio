@@ -19,6 +19,7 @@
             <h2 class="sectionTitle blue"><span>About Me</span></h2>
            <!--  <img src="" alt="A photo of Andrew Dyke"> -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eos consequatur et recusandae officiis quae. Molestias, adipisci doloribus ratione asperiores voluptates. Quae amet ipsa enim architecto dolorem, ducimus itaque soluta.</p>
+            <p></p>
           </div>
         </section>
       <!-- ==================== /about Me ========================= -->

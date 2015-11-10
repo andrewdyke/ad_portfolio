@@ -2,42 +2,81 @@
 // MEDIA QUERIES ===========================
 // Tablet
 @media (max-width: 768px) {
+	.toggle {
+		display: block;
+	}
+
 	.hamburger {
 		display: block;
 	}
+
 	header{
-		background-position: 15% 120px;
+		background-position: 20% 20px;
 		.headerBlurb {
 			margin: 60px 0;
 		}
 	}
-	.titleBox {
-		width:80%;
+
+	nav {
+		height: 75px;
 	}
-	.navWrap ul {
+
+	.navWrap ul, ul.menu {
+		width: 0;
 		display: none;
 	}
+
 	#about {
 		padding: 20px 10px 70px;
 	}
+
 	.aboutWrap {
 		padding : 0 10px;
 	}
+
 	.pieces {
 		padding: 0 10px;
 	}
+
 	.portPiece {
 		width: calc(50% - 20px);
 	}
 }
 
+@media (max-width: 640px) {
+	.headerBlurb {
+		display: none;
+	}
+}
+
+
+@media (max-width: 540px) {
+	.toggle	{
+		right: 20px;
+	}
+}
+
+@media (max-width: 414px) {
+	.toggle {
+    // right: 47px;
+	}
+	.portPiece {
+		width: 100%;
+	}
+	#skills .skillBox .skill {
+		text-align: center;
+		width: 50%;
+		margin: 0;
+	}
+}
+
 // Phone
 @media (max-width: 375px) {
-	.toggle {
-		display: block;
-	}
+		.toggle {
+	    right: 0;
+		}
 	header{
-		background-position: 0 0px;
+		background-position: 18% 0px;
 		.siteTitle a {
 			letter-spacing: -2px;
 		}
@@ -45,9 +84,9 @@
 	.titleBox {
 		flex-direction: column;
 		align-items: left;
-		width: 100%;
+		// width: 100%;
 		text-align: left;
-		margin-top: 100px;
+		// margin-top: 100px;
 		h2 {
 			width: 50px;
 			padding: 35px 20px;
@@ -67,11 +106,12 @@
 		margin: 10px 0;
 	}
 	#skills .skillBox .skill {
-		width: calc(50% - 20px);
+    width: calc(50% - 0px);
+    margin: 0 auto;
 	}
 	.formWrap {
 		padding: 0px 10px;
-		margin: 0 10px;
+		// margin: 0 10px;
 	}
 	#contact h2.sectionTitle {
 	    color: #fff;

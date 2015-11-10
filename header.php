@@ -22,32 +22,30 @@
 
 <body <?php body_class(); ?>>
 
-<!-- ================= Hamburger Menu ================== -->
-<button class="toggle">
-  <span>Toggle Open & Close</span>
-</button>
-<nav class="nav">
-  <ul>
-    <li><a href="#mainNav">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-<!-- /hamburger -->
-
 <!-- ==================== HEADER ======================= -->
-<header>
+<header class="animated fadeIn">
 
   <!-- ============== Navigation ================= -->
   <nav id="mainNav">
+    <!-- Hamburger -->
+      <button class="toggle">
+        <span>Toggle Open & Close</span>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a href="#mainNav">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /hamburger -->
     <div class="navWrap">
       <!-- Title Box -->
       <div class="titleBox">
         <h1 class="siteTitle hvr-grow">
           <a href="http://www.andrewdyke.me">Andrew Dyke</a>
         </h1>
-        <h2>Mobile, tablet and desktop.</h2>
       </div>
       <!-- /.titleBox -->
       <!-- Menu -->
@@ -55,6 +53,7 @@
         'container' => false,
         'theme_location' => 'primary'
       )); ?>
+    
     </div> <!-- /.navWrap -->
   </nav>
   <!-- ================ /navigation ================= -->

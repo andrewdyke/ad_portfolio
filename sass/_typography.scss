@@ -1,7 +1,6 @@
 
 @import 'colors';
 
-/* Headings */
 h1,h2,h3,h4,h5 {
 	margin: 0;
 }
@@ -16,8 +15,7 @@ p {
 }
 
 h1.siteTitle a {
-	padding: 0 20px;
-	// font-family: 'Oswald', sans-serif;
+	padding: 0 0 0 20px;
 	color: $blue;
 	width: 25%;
 	text-transform: lowercase;
@@ -27,7 +25,6 @@ h1.siteTitle a {
 h2 {
 	font-family: 'Catamaran', sans-serif;
 	color: $darkgrey;
-	// text-transform: lowercase;
 	font-weight: 100;
 	font-size: 1.4rem;
 	width: 25%;
@@ -38,7 +35,6 @@ h2.sectionTitle {
 	width: 100%;
 	font-size: 4rem;
 	margin: 50px 0;
-	// transform: skewY(2deg);
 	span {
 		position: relative;
 		display: inline-block;
