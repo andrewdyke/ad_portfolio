@@ -52,7 +52,7 @@
                   <h3 class="pieceTitle"><?php the_title(); ?></h3>
                   <p><?php the_field('short_description'); ?></p>
                 </div>
-              <!-- </a> -->
+              </a>
               <!-- /.portPiece -->
               <?php endwhile;//end portfolio loop ?>
               <?php wp_reset_postdata(); ?>
