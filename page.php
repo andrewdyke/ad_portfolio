@@ -46,11 +46,13 @@
               <!-- Loop through portfolio posts and put dynamic content in html tags -->
               <?php while($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
               <!-- Portfolio Piece -->
+               <a href="<?php the_field('project_url'); ?>" target="blank">
                 <div class="portPiece hvr-float" style="background-image: url(<?php echo get_field('bgimage')['url']; ?>);">
-                  <?php the_post_thumbnail('medium'); ?>
+                  <?php the_post_thumbnail('large'); ?>
                   <h3 class="pieceTitle"><?php the_title(); ?></h3>
                   <p><?php the_field('short_description'); ?></p>
-                </div> 
+                </div>
+              <!-- </a> -->
               <!-- /.portPiece -->
               <?php endwhile;//end portfolio loop ?>
               <?php wp_reset_postdata(); ?>

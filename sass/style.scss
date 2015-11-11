@@ -110,10 +110,13 @@ header {
 .pieces {
 	display: flex;
 	flex-wrap: wrap;
+	a {
+			width: 33.33%;
+	}
 }
 
 .portPiece {
-	width: calc(33% - 20px);
+	width: calc(100% - 20px);
 	color: white;
 	margin: 10px;
 	padding: 10px;

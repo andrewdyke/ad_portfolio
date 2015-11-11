@@ -1,5 +1,10 @@
 
 // MEDIA QUERIES ===========================
+@media (max-width: 900px) {
+	.headerBlurb h3 {
+		font-size: 4rem;
+	}
+}
 // Tablet
 @media (max-width: 768px) {
 	.toggle {
@@ -14,6 +19,12 @@
 		background-position: 20% 20px;
 		.headerBlurb {
 			margin: 60px 0;
+			h3 {
+				font-size: 3.4rem;
+			}
+			h4 {
+				font-size: 2rem;
+			}
 		}
 	}
 
@@ -100,6 +111,9 @@
 	}
 	.aboutWrap {
 		padding : 0 10px;
+	}
+	.pieces a {
+		width: 33.33%;
 	}
 	.portPiece {
 		width: 100%;
