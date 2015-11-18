@@ -48,7 +48,6 @@ body {
 
 // HEADER STYLES ======================
 header {
-	// background: white;
 	background: url(../startertheme/images/headBG1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,6 +73,10 @@ header {
 	h4 {
 		margin: 20px 0 0;
 	}
+}
+
+.mobileSubTitle {
+	display: none;
 }
 
 .container {
@@ -119,6 +122,7 @@ header {
 	width: calc(100% - 20px);
 	color: white;
 	margin: 10px;
+	min-height: 447px;
 	padding: 10px;
 	position: relative;
 	border-radius: 5px;
@@ -180,6 +184,13 @@ header {
 	h2.sectionTitle {
 		color: white;
 		margin: 50px 0 70px;
+	}
+	p.info {
+		color: white;
+		font-size: 2.4rem;
+		text-align: center;
+		font-weight: 400;
+		margin: 0;
 	}
 }
 

@@ -1,0 +1,235 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'david',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'david', null ]
+7 verbose cache add spec david
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'david',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'david',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed david@*
+10 verbose addNamed "*" is a valid semver range for david
+11 silly addNameRange { name: 'david', range: '*', hasData: false }
+12 silly mapToRegistry name david
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/david
+16 verbose addNameRange registry:https://registry.npmjs.org/david not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/david
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 5:15:47 PM
+20 verbose request id 08837ecc72a33971
+21 http request GET https://registry.npmjs.org/david
+22 http 200 https://registry.npmjs.org/david
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"AXPV0JX3XAP0EP6778FBQOTJP"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'cache-control': 'max-age=60',
+23 verbose headers   'content-length': '71275',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 17 Nov 2015 22:15:47 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-ord1729-ORD',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '1',
+23 verbose headers   'x-timer': 'S1447798547.903139,VS0,VE76',
+23 verbose headers   vary: 'Accept' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"AXPV0JX3XAP0EP6778FBQOTJP"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '71275',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 17 Nov 2015 22:15:47 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-ord1729-ORD',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1447798547.903139,VS0,VE76',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving david to /Users/andrewdyke/.npm/registry.npmjs.org/david/.cache.json
+26 silly addNameRange number 2 { name: 'david', range: '*', hasData: true }
+27 silly addNameRange versions [ 'david',
+27 silly addNameRange   [ '0.0.1',
+27 silly addNameRange     '0.0.2',
+27 silly addNameRange     '0.0.3',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.1.2',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.2.1',
+27 silly addNameRange     '1.3.0',
+27 silly addNameRange     '1.4.0',
+27 silly addNameRange     '1.4.1',
+27 silly addNameRange     '1.5.0',
+27 silly addNameRange     '1.6.0',
+27 silly addNameRange     '1.6.1',
+27 silly addNameRange     '1.7.0',
+27 silly addNameRange     '1.7.1',
+27 silly addNameRange     '1.7.2',
+27 silly addNameRange     '1.7.3',
+27 silly addNameRange     '1.8.0',
+27 silly addNameRange     '1.8.1',
+27 silly addNameRange     '1.9.0',
+27 silly addNameRange     '1.9.1',
+27 silly addNameRange     '2.0.0',
+27 silly addNameRange     '2.1.0',
+27 silly addNameRange     '2.1.1',
+27 silly addNameRange     '2.1.2',
+27 silly addNameRange     '2.1.3',
+27 silly addNameRange     '2.2.0',
+27 silly addNameRange     '2.3.0',
+27 silly addNameRange     '2.3.1',
+27 silly addNameRange     '2.4.0',
+27 silly addNameRange     '2.4.1',
+27 silly addNameRange     '3.0.0',
+27 silly addNameRange     '3.1.0',
+27 silly addNameRange     '3.2.0',
+27 silly addNameRange     '3.3.0',
+27 silly addNameRange     '3.3.1',
+27 silly addNameRange     '4.0.0',
+27 silly addNameRange     '4.1.0',
+27 silly addNameRange     '5.0.0',
+27 silly addNameRange     '6.0.1',
+27 silly addNameRange     '6.0.2',
+27 silly addNameRange     '6.1.0',
+27 silly addNameRange     '6.1.1',
+27 silly addNameRange     '6.1.2',
+27 silly addNameRange     '6.1.3',
+27 silly addNameRange     '6.1.4',
+27 silly addNameRange     '6.1.5',
+27 silly addNameRange     '6.1.6',
+27 silly addNameRange     '6.2.0',
+27 silly addNameRange     '6.3.0',
+27 silly addNameRange     '6.4.0',
+27 silly addNameRange     '7.0.0' ] ]
+28 silly addNamed david@7.0.0
+29 verbose addNamed "7.0.0" is a plain semver version for david
+30 silly mapToRegistry name david
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/david
+34 verbose addRemoteTarball https://registry.npmjs.org/david/-/david-7.0.0.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/david/-/david-7.0.0.tgz',
+35 verbose addRemoteTarball   'af7432bb95897742915459ae5ca233a5f533c7ce' ]
+36 info retry fetch attempt 1 at 5:15:47 PM
+37 info attempt registry request try #1 at 5:15:47 PM
+38 http fetch GET https://registry.npmjs.org/david/-/david-7.0.0.tgz
+39 http fetch 200 https://registry.npmjs.org/david/-/david-7.0.0.tgz
+40 silly fetchAndShaCheck shasum af7432bb95897742915459ae5ca233a5f533c7ce
+41 verbose addTmpTarball /var/folders/49/7669rfpd3jd7c236qnfy7y7m0000gn/T/npm-15680-88d89c60/registry.npmjs.org/david/-/david-7.0.0.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for david@7.0.0
+43 silly cache afterAdd david@7.0.0
+44 verbose afterAdd /Users/andrewdyke/.npm/david/7.0.0/package/package.json not in flight; writing
+45 verbose afterAdd /Users/andrewdyke/.npm/david/7.0.0/package/package.json written
+46 silly install resolved [ { name: 'david',
+46 silly install resolved     version: '7.0.0',
+46 silly install resolved     description: 'Node.js module that tells you when your project npm dependencies are out of date.',
+46 silly install resolved     main: 'lib/david.js',
+46 silly install resolved     repository: { type: 'git', url: 'git://github.com/alanshaw/david.git' },
+46 silly install resolved     bugs: { url: 'https://github.com/alanshaw/david/issues' },
+46 silly install resolved     author: { name: 'Alan Shaw' },
+46 silly install resolved     bin: { david: 'bin/david.js' },
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'standard && node bin/david && istanbul cover node_modules/.bin/tape test/*.js',
+46 silly install resolved        coveralls: 'cat ./coverage/lcov.info | coveralls' },
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     files: [ 'bin', 'lib', 'LICENCE' ],
+46 silly install resolved     dependencies:
+46 silly install resolved      { async: '^1.4.1',
+46 silly install resolved        'cli-color-tty': '^2.0.0',
+46 silly install resolved        'cli-table': '^0.3.1',
+46 silly install resolved        minimist: '^1.1.0',
+46 silly install resolved        npm: '^3.3.12',
+46 silly install resolved        semver: '^5.0.1',
+46 silly install resolved        xtend: '^4.0.0' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { coveralls: '^2.10.0',
+46 silly install resolved        istanbul: '^0.4.0',
+46 silly install resolved        jshint: '^2.5.1',
+46 silly install resolved        rewire: '^2.1.0',
+46 silly install resolved        rimraf: '^2.3.2',
+46 silly install resolved        standard: '^5.0.2',
+46 silly install resolved        tape: '^4.0.0' },
+46 silly install resolved     engines: { node: '>=0.10.1' },
+46 silly install resolved     gitHead: '6210afab59203373451a2cf03e4074a98b25787c',
+46 silly install resolved     homepage: 'https://github.com/alanshaw/david#readme',
+46 silly install resolved     _id: 'david@7.0.0',
+46 silly install resolved     _shasum: 'af7432bb95897742915459ae5ca233a5f533c7ce',
+46 silly install resolved     _from: 'david@*',
+46 silly install resolved     _npmVersion: '3.3.6',
+46 silly install resolved     _nodeVersion: '5.0.0',
+46 silly install resolved     _npmUser: { name: 'alanshaw', email: 'alan138@gmail.com' },
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: 'af7432bb95897742915459ae5ca233a5f533c7ce',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/david/-/david-7.0.0.tgz' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/david/-/david-7.0.0.tgz' } ]
+47 info install david@7.0.0 into /usr/local/lib
+48 info installOne david@7.0.0
+49 verbose installOne of david to /usr/local/lib not in flight; installing
+50 verbose lock using /Users/andrewdyke/.npm/_locks/david-b64a0b4d2710fd86.lock for /usr/local/lib/node_modules/david
+51 silly install write writing david 7.0.0 to /usr/local/lib/node_modules/david
+52 verbose unbuild lib/node_modules/david
+53 silly gentlyRm /usr/local/lib/node_modules/david is being purged from base /usr/local
+54 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/david
+55 verbose tar unpack /Users/andrewdyke/.npm/david/7.0.0/package.tgz
+56 verbose tar unpacking to /usr/local/lib/node_modules/david
+57 silly gentlyRm /usr/local/lib/node_modules/david is being purged
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/david
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 error tar.unpack untar error /Users/andrewdyke/.npm/david/7.0.0/package.tgz
+61 verbose unlock done using /Users/andrewdyke/.npm/_locks/david-b64a0b4d2710fd86.lock for /usr/local/lib/node_modules/david
+62 verbose fstream_path /usr/local/lib/node_modules/david
+63 verbose fstream_type Directory
+64 verbose fstream_class DirWriter
+65 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/david'
+65 verbose stack     at Error (native)
+66 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+66 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+66 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+67 verbose cwd /Users/andrewdyke/Sites/wordpress/ad_portfolio/wp-content/themes/startertheme
+68 error Darwin 15.0.0
+69 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "david" "-g"
+70 error node v4.2.1
+71 error npm  v2.14.7
+72 error path /usr/local/lib/node_modules/david
+73 error code EACCES
+74 error errno -13
+75 error syscall mkdir
+76 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/david'
+76 error     at Error (native)
+76 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/david']
+76 error   errno: -13,
+76 error   code: 'EACCES',
+76 error   syscall: 'mkdir',
+76 error   path: '/usr/local/lib/node_modules/david',
+76 error   fstream_type: 'Directory',
+76 error   fstream_path: '/usr/local/lib/node_modules/david',
+76 error   fstream_class: 'DirWriter',
+76 error   fstream_stack:
+76 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+76 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+76 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+77 error Please try running this command again as root/Administrator.
+78 verbose exit [ -13, true ]
+79 verbose unbuild lib/node_modules/david
+80 silly gentlyRm /usr/local/lib/node_modules/david is being purged from base /usr/local
+81 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/david

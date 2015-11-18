@@ -22,7 +22,7 @@ var errorHandler = function ( error ) {
 
 gulp.task('bs', function() {
 	browserSync.init({
-		proxy: 'http://localhost:8888'
+		proxy: 'http://localhost:8888/ad_portfolio/'
 	});
 });
 
@@ -31,11 +31,11 @@ gulp.task('bs', function() {
 // ------------------------------
 
 gulp.task('styles', function() {
-	return gulp.src('./sass/**/*.scss')
-		.pipe(plugins.sourcemaps.init())
+	return gulp.src('./sass/style.scss')
+		// .pipe(plugins.sourcemaps.init())
 		.pipe(plugins.sass()).on('error', errorHandler)
 		.pipe(plugins.minifyCss()).on('error', errorHandler)
-		.pipe(plugins.sourcemaps.write())
+		// .pipe(plugins.sourcemaps.write())
 		.pipe(plugins.concat('style.css'))
 		.pipe(plugins.autoprefixer('last 5 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
 		.pipe(gulp.dest('./'))
@@ -46,21 +46,19 @@ gulp.task('styles', function() {
 // Scripts Task
 // ------------------------------
 
-gulp.task('scripts', function () {
+gulp.task('scripts', function() {
 	return gulp.src('./js/scripts.js')
-		.pipe(plugins.sourcemaps.init())
-		.pipe(plugins.concat('main.min.js'))
-		.pipe(plugins.sourcemaps.write())
+		.pipe(plugins.rename('main.min.js'))
 		.pipe(plugins.uglify()).on('error', errorHandler)
 		.pipe(gulp.dest('./js'))
-		.pipe(reload({stream:true}));
+		.pipe(reload({ stream:true }));
 });
 
 // ------------------------------
 // Images Task
 // ------------------------------
 
-gulp.task('images', function () {
+gulp.task('images', function() {
 	return gulp.src('./images/**/*')
 		.pipe(plugins.imagemin({ progressive: true })).on('error', errorHandler)
 		.pipe(gulp.dest('./images'));
@@ -71,7 +69,7 @@ gulp.task('images', function () {
 // ------------------------------
 
 gulp.task('watch', function() {
-	gulp.watch('sass/**/*.scss', ['styles']);
+	gulp.watch('./sass/**/*.scss', ['styles']);
 	gulp.watch('./js/**/*.js', ['scripts']);
 	gulp.watch('./**/*.php', reload);
 });

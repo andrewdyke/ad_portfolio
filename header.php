@@ -61,8 +61,8 @@
   <!-- ======== Header Content ========== -->
   <div class="container">
     <section class="headerText">
+      <p class="mobileSubTitle">Web Developer</p>
       <div class="headerBlurb">
-        <!-- <h3>My name is <span>Andrew</span></h3> -->
         <h3>I am a <span>Front-End Developer</span></h3>
         <h3>Based in <span>Toronto</span>.</h3>
         <h4>I build <span>custom responsive websites</span><br>

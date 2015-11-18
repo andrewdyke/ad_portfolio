@@ -17,9 +17,7 @@
         <section id="about">
           <div class="aboutWrap">
             <h2 class="sectionTitle blue"><span>About Me</span></h2>
-           <!--  <img src="" alt="A photo of Andrew Dyke"> -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eos consequatur et recusandae officiis quae. Molestias, adipisci doloribus ratione asperiores voluptates. Quae amet ipsa enim architecto dolorem, ducimus itaque soluta.</p>
-            <p></p>
+            <p>Hi I'm Andrew. I recently graduated from the full-time immersive Front-End Developer bootcamp at HackerYou. I love this place. I hope to work somewhere just like this, where I can be surrounded by friendly, creative and supportive people. This is my portfolio. Grab your board and let's go surfing!</p>
           </div>
         </section>
       <!-- ==================== /about Me ========================= -->
@@ -85,11 +83,12 @@
 
       <!-- ======================= Contact ========================= -->
       <section id="contact">
-        <!-- <div class="container"> -->
-          <h2 class="sectionTitle"><span>Contact Me</span></h2>  
-       <!--  </div> -->
+        <h2 class="sectionTitle"><span>Contact Me</span></h2>  
+        <p class="info">hello@andrewdyke.me</p>
+        <p class="info">+1.705.305.2737</p>
+       <!--  <a href="files/andrewDykeResume.pdf"><p>Download my résumé</p></a> -->
         <div class="formWrap">
-          <?php  dynamic_sidebar( 'primary-widget-area' ); ?>
+          <?php dynamic_sidebar( 'primary-widget-area' ); ?>
         </div>
       </section>
       <!-- ======================= /Contact ======================== -->

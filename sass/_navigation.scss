@@ -8,6 +8,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	z-index:9999999;
 }
 
 .navWrap {
@@ -22,12 +23,10 @@ nav {
 .titleBox {
 	display: flex;
 	align-items: center;
-	// max-width: 60%;
 	flex-wrap: wrap;
 }
 
 ul.menu {
-	// width: 43%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
