@@ -14,12 +14,12 @@
     <div class="content">
 
       <!-- ======================= About Me ======================== -->
-        <section id="about">
-          <div class="aboutWrap">
-            <h2 class="sectionTitle blue"><span>About Me</span></h2>
-            <p>Hi I'm Andrew. I recently graduated from the full-time immersive Front-End Developer bootcamp at HackerYou. I love this place. I hope to work somewhere just like this, where I can be surrounded by friendly, creative and supportive people. This is my portfolio. Grab your board and let's go surfing!</p>
-          </div>
-        </section>
+      <section id="about">
+        <div class="aboutWrap">
+          <h2 class="sectionTitle blue"><span>About Me</span></h2>
+          <p>Hi I'm Andrew. I recently graduated from the full-time immersive Front-End Developer bootcamp at HackerYou. I love this place. I hope to work somewhere just like this, where I can be surrounded by friendly, creative and supportive people. This is my portfolio. Grab your board and let's go surfing!</p>
+        </div>
+      </section>
       <!-- ==================== /about Me ========================= -->
 
 
@@ -39,13 +39,13 @@
                 'orderby'=>'RAND' //ordering items randomly
                 )
             ); ?>
-            <!-- If there are porfolio posts.. -->
+            <?php //If there are porfolio posts.. ?>
             <?php if ($portfolioQuery->have_posts()): ?>
-              <!-- Loop through portfolio posts and put dynamic content in html tags -->
+              <?php //Loop through portfolio posts and put dynamic content in html tags ?>
               <?php while($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
               <!-- Portfolio Piece -->
                <a href="<?php the_field('project_url'); ?>" target="blank">
-                <div class="portPiece hvr-float" style="background-image: url(<?php echo get_field('bgimage')['url']; ?>);">
+                <div class="portPiece" style="background-image: url(<?php echo get_field('bgimage')['url']; ?>);">
                   <?php the_post_thumbnail('large'); ?>
                   <h3 class="pieceTitle"><?php the_title(); ?></h3>
                   <p><?php the_field('short_description'); ?></p>
@@ -58,10 +58,10 @@
           </div>
         </div>
       </section>
-      <!-- ================== /Portfolio Section ==================== -->
+      <!-- ================== /Portfolio Section =================== -->
 
 
-      <!-- ========================= Skills ========================= -->
+      <!-- ========================= Skills ======================== -->
       <section id="skills">
         <div class="container">
           <h2 class="sectionTitle blue"><span>Skills</span></h2>
@@ -85,7 +85,7 @@
       <section id="contact">
         <h2 class="sectionTitle"><span>Contact Me</span></h2>  
         <p class="info">hello@andrewdyke.me</p>
-        <p class="info">+1.705.305.2737</p>
+        <!-- <p class="info">+1.705.305.2737</p> -->
        <!--  <a href="files/andrewDykeResume.pdf"><p>Download my résumé</p></a> -->
         <div class="formWrap">
           <?php dynamic_sidebar( 'primary-widget-area' ); ?>
