@@ -1,7 +1,7 @@
 
 /*
 * Theme Name: Andrew's Portfolio
-* Theme URI: http://hackeryou.com;
+* Theme URI: http://andrewdyke.me;
 * Description: Portfolio of Front End Developer Andrew Dyke
 * Version: 1.0
 * Author: Andrew Dyke
@@ -10,7 +10,7 @@
 
 @import 'colors';
 @import 'normalize';
-@import url(https://fonts.googleapis.com/css?family=Oswald|Catamaran:400,100,500);
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,100,500);
 @import 'animate';
 @import 'hover';
 @import 'typography';
@@ -31,16 +31,23 @@ img {
 	max-width: 100%;
 }
 
+blockquote {
+	background: none;
+	font-size: 2rem;
+	font-weight: 300;
+}
+
 body {
-	position: relative;
 	font-size: 1.8rem;
 	color: $darkgrey;
-	font-family: 'Catamaran';
+	background: $blue;
+	font-family: Catamaran;
+	// margin-top: -50px;
 	-webkit-font-smoothing: antialiased;
 }
 
 .tileBG {
-	background: url(../startertheme/images/bluePentagons.jpg) repeat;
+	background: url(../andrewdyke.me/images/bluePentagons.jpg) repeat;
 	background-size: 300px auto;
 }
 
@@ -48,7 +55,7 @@ body {
 
 // HEADER STYLES ======================
 header {
-	background: url(../startertheme/images/headBG1.jpg);
+	background: url(../andrewdyke.me/images/headBG1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width:100%;
@@ -60,7 +67,7 @@ header {
 	width: 100%;
 	color: $blue;
 	display: flex;
-	justify-content: flex-end;
+	// justify-content: flex-end;
 }
 
 .headerBlurb {
@@ -77,6 +84,10 @@ header {
 
 .mobileSubTitle {
 	display: none;
+}
+
+.main {
+	// margin-top: -50px;
 }
 
 .container {
@@ -122,14 +133,14 @@ header {
 	width: calc(100% - 20px);
 	color: white;
 	margin: 10px;
-	min-height: 447px;
+	min-height: 490px;
 	padding: 10px;
 	position: relative;
-	// border-radius: 5px;
+	border-radius: 5px;
 	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+	transition: all .6s;
 	&:hover {
-		transition: all .8s;
-		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
 		transform: translateY(-8px);
 	}
 	&:after {
@@ -138,6 +149,7 @@ header {
 		width: 100%;
 		height: 100%;
 		display: block;
+		border-radius: 5px;
 		position: absolute;
 		top: 0;
 		left: 0;

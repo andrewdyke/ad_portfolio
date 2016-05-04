@@ -3,13 +3,10 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
-
-/* THANKS */
-  WordPress starter theme from HackerYou - http://hackeryou.com
+  Web Developer: Andrew dyke
+  Site: http://www.andrewdyke.me
+  Twitter: @andrewdyke_
+  Location: Toronto, Canada
 
 /* SITE */
   Standards: HTML5, CSS3

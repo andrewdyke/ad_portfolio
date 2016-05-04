@@ -3,7 +3,7 @@
 
 footer {
 	background: $darkgrey;
-	padding: 90px 0;
+	padding: 60px 0;
 	font-size: 1.4rem;
 	a {
 			text-align: center;
@@ -18,10 +18,21 @@ footer {
 	color: white;
 }
 
+.toTopLink {
+	i {
+  	font-size: 4rem;
+	}
+	 span {
+		font-size: 2rem;
+		color: white;
+	}
+}
+
 .social {
 	display: flex;
 	justify-content: space-between;
 	width: 200px;
+	margin-top: 25px;
 	i {
 		color: rgba(255,255,255,0.6);
 		font-size: 3rem;
