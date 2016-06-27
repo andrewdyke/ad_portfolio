@@ -112,6 +112,13 @@ header {
 	padding: 0 10px;
 }
 
+section#about a {
+    color: #2189f8;
+    &:hover {
+    	text-decoration: underline;
+    }
+}
+
 // Portfolio ========================
 #portfolio {
 	@extend .tileBG;

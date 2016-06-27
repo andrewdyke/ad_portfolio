@@ -10,7 +10,7 @@
 			<section id="about">
 				<div class="aboutWrap">
 					<h2 class="sectionTitle blue"><span>About Me</span></h2>
-					<p><blockquote>Hi I'm Andrew. I'm a front end developer. I was a part of Cohort 8 a.k.a. "Planet of the 8's" at HackerYou. It was a life changing experience where I met a lot of amazing, kind people who love technology and sharing their passion with one another. Since the bootcamp in fall of 2015 I've worked at some really great places like Jam3 and Digital Howard Inc. to name a couple. I have a strong passion for developing modern web experiences and am always looking to expand my skillset and grow in my craft. This is just the start. Welcome to my website.</blockquote></p>
+					<p><blockquote>Hi I'm Andrew. I'm a front end developer. I was a part of Cohort 8 a.k.a. "Planet of the 8's" at HackerYou. It was a life changing experience where I met a lot of amazing, kind people who love technology and sharing their passion with one another. Since the bootcamp in fall of 2015 I've worked with some really companies like <a href="http://www.jam3.com">Jam3</a>, <a href="http://digitalhoward.com/">Digital Howard</a>, and <a href="http:www.alliants.com">Alliants</a>. I have a strong passion for developing modern web experiences and am always looking to expand my skillset and grow in my craft. This is just the start. Welcome to my website.</blockquote></p>
 				</div>
 			</section>
 			<!-- ==================== /about Me ========================= -->
