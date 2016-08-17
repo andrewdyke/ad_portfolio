@@ -16,16 +16,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-<div id="topDiv"></div>
-
 <!-- ==================== HEADER ======================= -->
-<header id="header" class="animated fadeIn">
+<header id="header">
 
   <!-- ============== Navigation ================= -->
   <nav id="mainNav">
@@ -75,4 +72,3 @@
   <!-- /header .container -->
 
 </header><!--/.header-->
-

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="container404">
     <div class="content">
       <?php
       	/* Queue the first post, that way we know who

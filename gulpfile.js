@@ -32,12 +32,15 @@ gulp.task('bs', function() {
 
 gulp.task('styles', function() {
 	return gulp.src('./sass/style.scss')
-		// .pipe(plugins.sourcemaps.init())
+		.pipe(plugins.plumber({
+		  errorHandler: plugins.notify.onError("Error: <%= error.message %>")
+		}))
+		.pipe(plugins.sourcemaps.init())
 		.pipe(plugins.sass()).on('error', errorHandler)
-		.pipe(plugins.cleanCSS()).on('error', errorHandler)
-		// .pipe(plugins.sourcemaps.write())
-		.pipe(plugins.concat('style.css'))
 		.pipe(plugins.autoprefixer('last 5 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+		.pipe(plugins.cssnano())
+		.pipe(plugins.concat('style.css'))
+		.pipe(plugins.sourcemaps.write('.'))
 		.pipe(gulp.dest('./'))
 		.pipe(reload({ stream: true }));
 });

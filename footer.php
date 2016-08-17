@@ -1,8 +1,7 @@
-
 <!-- =========================== FOOTER =============================== -->
 <footer>
 		<div class="container">
-			<a href="#topDiv" class="toTopLink"><i class="fa fa-angle-double-up"></i><br><span>Back to Top</span></a>
+			<a href="#header" class="toTopLink"><i class="fa fa-angle-up"></i></a>
 			<div class="social">
 				<a href="https://twitter.com/andrewdyke_" target="blank"><i class="fa fa-twitter"></i></a>
 				<a href="https://ca.linkedin.com/in/dykeandrew" target="blank"><i class="fa fa-linkedin"></i></a>
@@ -14,14 +13,6 @@
 </footer>
 <!-- =========================== /footer ================================ -->
 <!-- Background tile image provided by http://wildtextures.com -->
-<script>
-/* Google Analytics! */
- var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
- (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
- g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
- s.parentNode.insertBefore(g,s)}(document,"script"));
-</script>
-
 <?php wp_footer(); ?>
 </body>
 </html>

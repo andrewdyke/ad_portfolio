@@ -1,4 +1,4 @@
- <?php 
+<?php 
 	get_header();  
 ?>
 
@@ -10,11 +10,10 @@
 			<section id="about">
 				<div class="aboutWrap">
 					<h2 class="sectionTitle blue"><span>About Me</span></h2>
-					<p><blockquote>Hi I'm Andrew. I'm a front end developer. I was a part of Cohort 8 a.k.a. "Planet of the 8's" at HackerYou. It was a life changing experience where I met a lot of amazing, kind people who love technology and sharing their passion with one another. Since the bootcamp in fall of 2015 I've worked with some really companies like <a href="http://www.jam3.com">Jam3</a>, <a href="http://digitalhoward.com/">Digital Howard</a>, and <a href="http:www.alliants.com">Alliants</a>. I have a strong passion for developing modern web experiences and am always looking to expand my skillset and grow in my craft. This is just the start. Welcome to my website.</blockquote></p>
+					<p><blockquote>Hi I'm Andrew. I'm a front end developer. I was a part of Cohort 8 a.k.a. "Planet of the 8's" at HackerYou. It was a life changing experience where I met a lot of amazing, kind people who love technology and sharing their passion with one another. Since the bootcamp in fall of 2015 I've worked with some really great companies like <a href="http://www.jam3.com">Jam3</a>, <a href="http://www.digitalhoward.com/">Digital Howard</a>, and <a href="http://www.alliants.com">Alliants</a>. I have a strong passion for developing modern web experiences and am always looking to expand my skillset and grow in my craft. This is just the start. Welcome to my website.</blockquote></p>
 				</div>
 			</section>
 			<!-- ==================== /about Me ========================= -->
-
 
 
 			<!-- ====================== Portfolio ======================== -->
@@ -24,7 +23,7 @@
 
 					<!-- Pieces Section -->
 					<div class="pieces">
-						<!-- Creating a custom query to retrieve and display portfolio items -->
+						<?php  //Creating a custom query to retrieve and display portfolio items ?>
 						<?php $portfolioQuery = new WP_Query(
 							array(
 								'post_type'=>'portfolio',
@@ -37,11 +36,13 @@
 							<?php //Loop through portfolio posts and put dynamic content in html tags ?>
 							<?php while($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
 							<!-- Portfolio Piece -->
-							 <a href="<?php the_field('project_url'); ?>" target="blank">
+							<a href="<?php the_field('project_url'); ?>" target="blank">
 								<div class="portPiece" style="background-image: url(<?php echo get_field('bgimage')['url']; ?>);">
 									<?php the_post_thumbnail('large'); ?>
-									<h3 class="pieceTitle"><?php the_title(); ?></h3>
-									<p><?php the_field('short_description'); ?></p>
+									<div class="infoBox">
+										<h3 class="pieceTitle"><?php the_title(); ?></h3>
+										<p><?php the_field('short_description'); ?></p>
+									</div>
 								</div>
 							</a>
 							<!-- /.portPiece -->
@@ -87,12 +88,7 @@
 		</div> <!-- /.content -->
 </div> <!-- /.main -->
 
-<!-- /content mid section -->
-
-
 <?php  
 	// display the footer.php file here
 	get_footer(); 
 ?>
-
-

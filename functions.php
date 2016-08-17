@@ -276,11 +276,3 @@ function addClassToLink($attrs){
 
 // Hiding and Showing Admin bar
 show_admin_bar( false );
-
-
-
-
-
-
-
-

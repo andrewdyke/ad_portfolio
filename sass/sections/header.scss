@@ -1,0 +1,38 @@
+@import '../setup/colors';
+
+// HEADER STYLES ======================
+header {
+	background: url(../andrewdyke.me/images/headBG1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height:100vh;
+	min-height: 500px;
+}
+
+.headerText {
+	width: 100%;
+	color: $blue;
+	display: flex;
+}
+
+.headerBlurb {
+	padding: 0 20px 0;
+	margin: 100px 0;
+	text-align: right;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	h4 {
+		margin: 20px 0 0;
+	}
+}
+
+.mobileSubTitle {
+	display: none;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
